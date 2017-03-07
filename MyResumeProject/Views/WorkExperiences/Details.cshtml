@@ -1,0 +1,42 @@
+﻿@model MyResumeProject.Models.WorkExperience
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>WorkExperience</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Employer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.JobDuties)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.JobDuties)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmploymentDates)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmploymentDates)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

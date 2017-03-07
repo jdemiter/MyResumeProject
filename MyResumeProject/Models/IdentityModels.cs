@@ -29,5 +29,7 @@ namespace MyResumeProject.Models
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<MyResumeProject.Models.WorkExperience> WorkExperiences { get; set; }
     }
 }
